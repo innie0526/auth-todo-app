@@ -2,7 +2,10 @@ import React,{useState, useEffect} from "react";
 import TodoList from "../../components/Todo/TodoList";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { Stack, Container, Button } from 'react-bootstrap';
+import { Container, 
+    Button, 
+    ModalFooter
+} from 'react-bootstrap';
 import CreateTodo from "../../components/Todo/CreateTodo";
 
 
@@ -23,24 +26,23 @@ const Todo = () => {
     return (
         <TodoWrap>
             <Container>
-                
-        {/* <Stack direction="horizontal" gap={2} className="mb-5"> */}
-            
         <h3>To do list</h3>
         <Container>
             <CreateTodo TodoListData={TodoListData} setTodoListData={setTodoListData}/>
             <TodoList TodoListData={TodoListData} setTodoListData={setTodoListData}/>
         </Container>
+        <br/>
+        <ModalFooter>
         <Button
         className="ms-auto"
-        variant="outline-warning"
+        variant="warning"
         size="m"
         onClick={() => Logout()}
         >
         로그아웃
         </Button>
-
-        {/* </Stack> */}
+            </ModalFooter>
+            
             </Container>
             </TodoWrap>
     );
@@ -50,7 +52,6 @@ export default Todo;
 
 const TodoWrap = styled.div`
 position: absolute;
-background: #ffff89;
 border:1px solid #000000;
 top: 50%;
 left: 50%;

@@ -3,18 +3,18 @@ import { getTodoAPI, updateTodoAPI, deleteTodoAPI } from '../../api/api';
 import UpdateTodo from './UpdateTodo';
 import styled from 'styled-components';
 import {
-  Container,
-  ListGroup,
-  Row,
-  Col,
-  Button,
-  ToggleButton,
-  ModalHeader,
-  ListGroupItem
+Container,
+ListGroup,
+Row,
+Col,
+ListGroupItem
 } from 'react-bootstrap';
-
-import { MdCheckBoxOutlineBlank,MdCheckBox, MdBorderColor ,MdDelete} from "react-icons/md";
-
+import { 
+    MdCheckBoxOutlineBlank,
+    MdBorderColor,
+    MdDelete
+} from "react-icons/md";
+import { RiCheckFill } from 'react-icons/ri';
 
 const Todolist = ({TodoListData, setTodoListData}) => {
     const[TodoValue, setTodoValue] = useState(null);
@@ -46,7 +46,6 @@ const Todolist = ({TodoListData, setTodoListData}) => {
 
     return(
     <Container>
-        <ModalHeader>TODO LIST</ModalHeader>
         <ListGroup as="ul">
         {TodoListData.map(item => {
         const { id, isCompleted, todo } = item;
@@ -54,7 +53,7 @@ const Todolist = ({TodoListData, setTodoListData}) => {
             <ListGroupItem as="li" key={id}>
             <ListWrap>
                 <Col>
-                <ToggleButton
+                <button
                     id="toggle-check"
                     type="checkbox"
                     checked={isCompleted}
@@ -65,36 +64,35 @@ const Todolist = ({TodoListData, setTodoListData}) => {
                     }}
                 >
                     {isCompleted ? (
-                        <MdCheckBox />
+                        <RiCheckFill 
+                        size="1rem"
+                        />
                         ) : (
-                        <MdCheckBoxOutlineBlank />
+                        <MdCheckBoxOutlineBlank/>
                     )}
-                </ToggleButton>
+                </button>
                 </Col>
                 {isCompleted ? (
                 <CompleteTodo xs={7}>{todo}</CompleteTodo>
                 ) : (
                 <Col xs={7}>{todo}</Col>
                 )}
-
                 <ButtonWrap>
-                <Button
-                    variant="success"
-                    onClick={() => {
-                    handleShow();
-                    setTodoValue(id);
-                    }}
+                <button
                 >
-                    <MdBorderColor />
-                </Button>{' '}
-                <Button
-                    variant="danger"
+                <MdBorderColor
+                onClick={() => {
+                handleShow();
+                setTodoValue(id);
+                }} />
+
+                </button>
+                    <button>
+                    <MdDelete 
                     onClick={() => {
                     DeleteTodo(id);
-                    }}
-                >
-                    <MdDelete />
-                </Button>
+                    }}/>
+                    </button>
                 </ButtonWrap>
             </ListWrap>
             </ListGroupItem>
@@ -114,16 +112,15 @@ const Todolist = ({TodoListData, setTodoListData}) => {
 
 
 const ListWrap = styled(Row)`
-  align-items: center;
-  `;
+    align-items: center;
+`;
 
 const CompleteTodo = styled(Col)`
-  color: #999;
-  text-decoration: line-through;
-  `;
+    text-decoration: line-through;
+`;
 
 const ButtonWrap = styled(Col)`
-  text-align: center;
-  `;
+    text-align: center;
+`;
 
-  export default Todolist;
+export default Todolist;

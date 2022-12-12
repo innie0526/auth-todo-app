@@ -8,7 +8,7 @@ import { Form,
     } from "react-bootstrap";
 import { updateTodoAPI } from "../../api/api";
 
-const UpdateTodo = ({show, setShow, setTodoList, TodoValue}) => {
+const UpdateTodo = ({show, setShow, setTodoListData, TodoValue}) => {
     const [updateValue, setUpdateValue] = useState('');
     const handleEditValue = e => {
         setUpdateValue(e.target.value);
@@ -16,7 +16,7 @@ const UpdateTodo = ({show, setShow, setTodoList, TodoValue}) => {
 
     const EditTodo = () => {
         updateTodoAPI(TodoValue, updateValue, false).then(res => {
-            setTodoList(res.data);
+            setTodoListData(res.data);
             setShow(prev => !prev);
         });
     };
@@ -29,7 +29,7 @@ const UpdateTodo = ({show, setShow, setTodoList, TodoValue}) => {
             setShow(prev => !prev);
         }}
         >
-<ModalTitle>할 일 수정하기</ModalTitle>
+<ModalTitle> 할 일 수정하기</ModalTitle>
         </ModalHeader>
 <ModalBody>
     <Form.Control
@@ -41,8 +41,9 @@ const UpdateTodo = ({show, setShow, setTodoList, TodoValue}) => {
     }
     />
 </ModalBody>
-<Button onClick={()=> {
-    EditTodo();
+<Button 
+onClick={()=> {
+EditTodo();
 }}>
 수정하기
 </Button>
