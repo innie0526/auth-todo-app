@@ -65,9 +65,9 @@ const Todolist = ({TodoListData, setTodoListData}) => {
                     }}
                 >
                     {isCompleted ? (
-                    <MdCheckBoxOutlineBlank />
-                    ) : (
-                    <MdCheckBox />
+                        <MdCheckBox />
+                        ) : (
+                        <MdCheckBoxOutlineBlank />
                     )}
                 </ToggleButton>
                 </Col>
@@ -110,6 +110,7 @@ const Todolist = ({TodoListData, setTodoListData}) => {
     </Container>
 );
 };
+
 
 
 const ListWrap = styled(Row)`

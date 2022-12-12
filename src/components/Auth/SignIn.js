@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Form, Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { postSignInAPI } from "../../api/api";
 // import AuthTemplate from "./AuthTemplate";
 
@@ -44,7 +43,7 @@ const SignIn = () => {
 
     return (
                 <Container>
-                    <h3>로그인</h3>
+                    <h3> <b>로그인</b></h3>
             <Form onChange={e => handleLoginInput(e)}>
             <Form.Group className="mb-3 mt-3">
                 <label for="email">이메일 주소</label>

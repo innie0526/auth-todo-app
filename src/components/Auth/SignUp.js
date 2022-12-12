@@ -39,7 +39,7 @@ const SignUp = () => {
 
     return (
         <Container>
-        <h3>회원가입</h3>
+        <h3><b>회원가입</b></h3>
             <Form onChange={e => handleLoginInput(e)}>
             <Form.Group>
                 <Form.Label>이메일 주소</Form.Label>

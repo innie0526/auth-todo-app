@@ -1,7 +1,6 @@
 import React,{useState, useEffect} from "react";
 import TodoList from "../../components/Todo/TodoList";
 import { useNavigate } from "react-router-dom";
-import UpdateTodo from "../../components/Todo/UpdateTodo";
 import styled from "styled-components";
 import { Stack, Container, Button } from 'react-bootstrap';
 import CreateTodo from "../../components/Todo/CreateTodo";
@@ -23,22 +22,26 @@ const Todo = () => {
 
     return (
         <TodoWrap>
-        <Stack direction="horizontal" gap={2} className="mb-5">
+            <Container>
+                
+        {/* <Stack direction="horizontal" gap={2} className="mb-5"> */}
             
         <h3>To do list</h3>
-        <Button
-          className="ms-auto"
-          variant="outline-dark"
-          size="sm"
-          onClick={() => Logout()}
-          >
-          로그아웃
-        </Button>
         <Container>
             <CreateTodo TodoListData={TodoListData} setTodoListData={setTodoListData}/>
             <TodoList TodoListData={TodoListData} setTodoListData={setTodoListData}/>
         </Container>
-        </Stack>
+        <Button
+        className="ms-auto"
+        variant="outline-warning"
+        size="m"
+        onClick={() => Logout()}
+        >
+        로그아웃
+        </Button>
+
+        {/* </Stack> */}
+            </Container>
             </TodoWrap>
     );
 };
@@ -46,13 +49,15 @@ const Todo = () => {
 export default Todo;
 
 const TodoWrap = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  margin: 0 auto;
-  padding: 40px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+position: absolute;
+background: #ffff89;
+border:1px solid #000000;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 500px;
+margin: 0 auto;
+padding: 40px;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+
 `;
