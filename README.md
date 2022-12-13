@@ -18,6 +18,7 @@ $ npm start
 ---
 
 ### :: 1. 로그인 / 회원가입
+
 <img src="![onboarding_task1](https://user-images.githubusercontent.com/112600139/207448892-84eee2fb-4aae-4fa5-86a4-ddb6fc99cacb.gif)
 "/>
 
@@ -49,6 +50,8 @@ $ npm start
 
 ### :: 2. 투두 리스트
 <img  src="![onboarding_task2](https://user-images.githubusercontent.com/112600139/207449782-551e1de4-06a9-4e09-927e-c0fa13cbabcf.gif)"/>
+
+
 #### Assignment4
 
 - `/todo`경로에 접속하면 투두 리스트의 목록을 볼 수 있도록 해주세요
