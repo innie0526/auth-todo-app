@@ -1,5 +1,4 @@
 import { Button, Form, Container } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from "react";
 import { postSignUpAPI } from "../../api/api";
 
@@ -29,6 +28,7 @@ const SignUp = () => {
                 res.statusCode === 201 &&
                 localStorage.setItem('access_token', res.data.access_token);
                 alert('회원가입 성공! \n로그인을 시도해주세요.');
+                setInputValue('');
             })
             .catch(err => {
                 console.log(err);
