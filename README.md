@@ -8,6 +8,12 @@ $ npm install
 $ npm start
 ```
 
+
+## 배포 
+---
+- 배포 주소: https://innie0526.github.io/wanted-pre-onboarding-frontend/
+
+
 ## 과제
 ---
 
