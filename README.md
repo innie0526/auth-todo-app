@@ -18,10 +18,9 @@ $ npm start
 ---
 
 ### :: 1. 로그인 / 회원가입
-
-<img src="![onboarding_task1](https://user-images.githubusercontent.com/112600139/207448892-84eee2fb-4aae-4fa5-86a4-ddb6fc99cacb.gif)
-"/>
-
+<p align="center">
+<img src="![onboarding_task1](https://user-images.githubusercontent.com/112600139/207448892-84eee2fb-4aae-4fa5-86a4-ddb6fc99cacb.gif")/>
+</p>
 - `/` 경로에 로그인 / 회원가입 기능을 개발해주세요
   - 페이지 안에 이메일 입력창, 비밀번호 입력창, 제출 버튼이 포함된 형태로 구성해주세요
   - 로그인, 회원가입을 별도의 경로로 분리해도 무방합니다.
@@ -49,7 +48,9 @@ $ npm start
 ---
 
 ### :: 2. 투두 리스트
-<img  src="![onboarding_task2](https://user-images.githubusercontent.com/112600139/207449782-551e1de4-06a9-4e09-927e-c0fa13cbabcf.gif)"/>
+<p align="center">
+<img src="![onboarding_task2](https://user-images.githubusercontent.com/112600139/207449782-551e1de4-06a9-4e09-927e-c0fa13cbabcf.gif)"/>
+</p>
 
 
 #### Assignment4
