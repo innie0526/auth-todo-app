@@ -19,8 +19,7 @@ $ npm start
 
 ### :: 1. 로그인 / 회원가입
 
-<img src="file:///home/edu12/%EC%82%AC%EC%A7%84/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-12-14%2015-32-29.png
-/>
+
 
 
 - `/` 경로에 로그인 / 회원가입 기능을 개발해주세요
@@ -50,9 +49,9 @@ $ npm start
 ---
 
 ### :: 2. 투두 리스트
-<p align="center">
-<img src="![onboarding_task2](https://user-images.githubusercontent.com/112600139/207449782-551e1de4-06a9-4e09-927e-c0fa13cbabcf.gif)"/>
-</p>
+
+<img src="https://user-images.githubusercontent.com/112600139/207449782-551e1de4-06a9-4e09-927e-c0fa13cbabcf.gif"/>
+
 
 
 #### Assignment4
