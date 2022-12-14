@@ -19,7 +19,7 @@ $ npm start
 
 ### :: 1. 로그인 / 회원가입
 
-
+<img src="https://user-images.githubusercontent.com/112600139/207554652-8bb40c2a-9743-4e6c-a9a1-01799fe12c25.gif">
 
 
 - `/` 경로에 로그인 / 회원가입 기능을 개발해주세요
