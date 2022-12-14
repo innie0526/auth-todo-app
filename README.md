@@ -18,9 +18,10 @@ $ npm start
 ---
 
 ### :: 1. 로그인 / 회원가입
-<p align="center">
-<img src="![onboarding_task1](https://user-images.githubusercontent.com/112600139/207448892-84eee2fb-4aae-4fa5-86a4-ddb6fc99cacb.gif")/>
-</p>
+
+<img src="file:///home/edu12/%EC%82%AC%EC%A7%84/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-12-14%2015-32-29.png
+/>
+
 
 - `/` 경로에 로그인 / 회원가입 기능을 개발해주세요
   - 페이지 안에 이메일 입력창, 비밀번호 입력창, 제출 버튼이 포함된 형태로 구성해주세요
