@@ -1,7 +1,7 @@
 # 💻 인증 인가 및 투두 리스트 구현
 
 
-## 프로젝트 설치 및 실행 방법
+## 💡 프로젝트 설치 및 실행 방법
 
 ```zsh
 $ npm install
@@ -9,12 +9,12 @@ $ npm start
 ```
 
 
-## 배포 
+## 🚀 배포 
 ---
 - 배포 주소: https://innie0526.github.io/wanted-pre-onboarding-frontend/
 - 
 
-### :: 1. 로그인 / 회원가입
+### 1. 로그인 / 회원가입
 
 <img src="https://user-images.githubusercontent.com/112600139/207554652-8bb40c2a-9743-4e6c-a9a1-01799fe12c25.gif">
 
@@ -37,7 +37,7 @@ $ npm start
 
 ---
 
-### :: 2. 투두 리스트
+### 2. 투두 리스트
 
 - `/todo`경로에 접속하면 투두 리스트의 목록
 - 리스트 페이지에는 투두 리스트의 내용과 완료 여부가 표시
